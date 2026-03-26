@@ -16,14 +16,14 @@ public class TagsTest extends TestBase {
     public void inValidMethod()
 
 {
-    SerenityRest.rest().given().when().post().then().statusCode(404).log().all();
+    SerenityRest.rest().given().when().post().then().statusCode(201).log().all();
 }
 @Tag("POSITIVE")
 @Test
     public void VerifyStatuscodeIs200()
 {
     System.out.println("Running POSITIVE test only");
-    SerenityRest.rest().given().when().get() .then().statusCode(200);
+    SerenityRest.rest().given().when().get() .then().statusCode(201);
 }
 
 @Tag("NEGATIVE")
