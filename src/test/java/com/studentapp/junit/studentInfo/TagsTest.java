@@ -9,7 +9,7 @@ import net.serenitybdd.junit5.SerenityJUnit5Extension;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 @ExtendWith(SerenityJUnit5Extension.class)
-public class Tagstest extends TestBase {
+public class TagsTest extends TestBase {
 
 @Tag("NEGATIVE")
 @Test
